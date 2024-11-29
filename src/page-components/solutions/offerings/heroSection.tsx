@@ -35,7 +35,7 @@ const HeroSection = () => {
             essential needs of property development companies. It focuses on core features that
             address the primary challenges , while minimizing investment.
           </Text>
-          <Button color="#2F3FAD">View all solutions</Button>
+          {/* <Button color="#2F3FAD">View all solutions</Button> */}
         </Stack>
       </Box>
     );
