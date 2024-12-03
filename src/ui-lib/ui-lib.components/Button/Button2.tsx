@@ -3,9 +3,10 @@ import {FaArrowRightLong} from 'react-icons/fa6';
 
 interface CustomButtonProps extends ButtonProps {
   variation?: 'primary' | 'secondary';
+  showArrow?: boolean;
 }
 
-export const Button2: React.FC<CustomButtonProps> = ({variation, ...rest}) => {
+export const Button2: React.FC<CustomButtonProps> = ({variation, showArrow = true, ...rest}) => {
   const default_button_styles = {
     fontFamily: `Neue Haas Grotesk Display Pro`,
     fontSize: {base: `20px`, lg: `24px`},
@@ -32,7 +33,7 @@ export const Button2: React.FC<CustomButtonProps> = ({variation, ...rest}) => {
         >
           <HStack gap={{base: `24px`}} justify={`space-between`} w={`100%`}>
             <Text>{rest.children}</Text>
-            <FaArrowRightLong />
+            {showArrow && <FaArrowRightLong />}
           </HStack>
         </ChakraButton>
       );
