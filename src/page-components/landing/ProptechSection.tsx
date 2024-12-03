@@ -177,7 +177,7 @@ export const ProptechSection = () => {
         </Box>
       </Show>
       <Show above={`lg`}>
-        <Flex gap={`150px`} justify={`space-between`}>
+        <Flex gap={{base: `60px`, xl: `150px`}} justify={`space-between`} align={`flex-start`}>
           <Stack gap={`18px`}>
             {features?.map((el, i) => (
               <Stack

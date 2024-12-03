@@ -31,7 +31,7 @@ export const IdeasAndInsights = () => {
         >
           <Center aspectRatio={`386.5 / 290`} position="relative" transition={`.5s`}>
             <Image
-              src={`https://s3-alpha-sig.figma.com/img/827b/35c1/bb16393e66569431d249bf5634bfed86?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZWVa6-jDcpVKrlQ6vbu-Qad64v10i1arQZOV~vyPAxjfk-w9JcF8lUeTYY5olidWwgT2yhYZhe8cCjIDYBh2zhxFZAwuxXgTmEbIDjQkyA-y9FnMCV1JHOcflEZb23UCVKNYmL3b7vQNNwnHmb1v8mGFctIYICqmYSSeuY9RcbH4Noh-WWtgPcI3LFENVHx~gMBXh6BsmgsIv0lRcZpArpa8cvmHiiOqOphmyzzKTjVQ8ThNK~uCBdYyhXj1TByqgvSC0IQxci1PKzevJ5YQ0yRjFKtrCY3qpGhkGj4r4V36oxlR5Ge-3UG9rM8sbEf58AsWzErjPPVJ3Rwmkl~fyQ__`}
+              src={`/temp_local_images/ideas_insights_1.jpg`}
               alt="The Genesis"
               fill
               style={{objectFit: `cover`}}
@@ -66,7 +66,7 @@ export const IdeasAndInsights = () => {
         >
           <Center aspectRatio={`386.5 / 290`} position="relative" transition={`.5s`}>
             <Image
-              src={`https://s3-alpha-sig.figma.com/img/dd65/7baf/56c727d6ed6b7a685a24fe6ad31efdb2?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AoZPL0rpBtQdIcpbx-XFO1OH1Md2xjBC-9nAEw2azpMOrOp5PUdNgAtHFkeVXFrRe8HdC4EHtRm9HslSO5I9E-DWiq75GkFfJlRGNED9TcucyXbwQn0aElPP68SPRPvEATJt7u6WClmrUPj2sm1IlgFTbrBzRiE56aUTRzWg0Sy~STCH1sfhPEmk0bV3q~Gmkapkg0x8Kldfqt0g5DFtckwIq1cUev0v2aYoQg5Z57hgOMx4GlcikB1HAfc1D0fSKCIkROsXI13gy63siIHL8B9FrpOGyq1~Vm-jwmTo5cA9iDhlyjQphRPb2I7ex5YuE5i1iU6EfNy~PNPV~OLR0A__`}
+              src={`/temp_local_images/ideas_insights_2.jpg`}
               alt="Why Myxellia instead of building"
               fill
               style={{objectFit: `cover`}}
@@ -101,7 +101,7 @@ export const IdeasAndInsights = () => {
         >
           <Center aspectRatio={`386.5 / 290`} position="relative" transition={`.5s`}>
             <Image
-              src={`https://s3-alpha-sig.figma.com/img/dd65/7baf/56c727d6ed6b7a685a24fe6ad31efdb2?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AoZPL0rpBtQdIcpbx-XFO1OH1Md2xjBC-9nAEw2azpMOrOp5PUdNgAtHFkeVXFrRe8HdC4EHtRm9HslSO5I9E-DWiq75GkFfJlRGNED9TcucyXbwQn0aElPP68SPRPvEATJt7u6WClmrUPj2sm1IlgFTbrBzRiE56aUTRzWg0Sy~STCH1sfhPEmk0bV3q~Gmkapkg0x8Kldfqt0g5DFtckwIq1cUev0v2aYoQg5Z57hgOMx4GlcikB1HAfc1D0fSKCIkROsXI13gy63siIHL8B9FrpOGyq1~Vm-jwmTo5cA9iDhlyjQphRPb2I7ex5YuE5i1iU6EfNy~PNPV~OLR0A__`}
+              src={`/temp_local_images/ideas_insights_3.jpg`}
               alt="automated payment plans"
               fill
               style={{objectFit: `cover`}}
@@ -136,7 +136,7 @@ export const IdeasAndInsights = () => {
         >
           <Center aspectRatio={`386.5 / 290`} position="relative" transition={`.5s`}>
             <Image
-              src={`https://s3-alpha-sig.figma.com/img/827b/35c1/bb16393e66569431d249bf5634bfed86?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZWVa6-jDcpVKrlQ6vbu-Qad64v10i1arQZOV~vyPAxjfk-w9JcF8lUeTYY5olidWwgT2yhYZhe8cCjIDYBh2zhxFZAwuxXgTmEbIDjQkyA-y9FnMCV1JHOcflEZb23UCVKNYmL3b7vQNNwnHmb1v8mGFctIYICqmYSSeuY9RcbH4Noh-WWtgPcI3LFENVHx~gMBXh6BsmgsIv0lRcZpArpa8cvmHiiOqOphmyzzKTjVQ8ThNK~uCBdYyhXj1TByqgvSC0IQxci1PKzevJ5YQ0yRjFKtrCY3qpGhkGj4r4V36oxlR5Ge-3UG9rM8sbEf58AsWzErjPPVJ3Rwmkl~fyQ__`}
+              src={`/temp_local_images/ideas_insights_4.jpg`}
               alt="fractional ownership"
               fill
               style={{objectFit: `cover`}}
