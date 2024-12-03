@@ -7,7 +7,6 @@ import ReactPlayer from 'react-player';
 export const ProptechSection = () => {
   const [isClient, setIsClient] = useState(false);
   const [count, setCount] = useState(1);
-  const [resetInterval, setResetInterval] = useState(``);
 
   useEffect(() => {
     setIsClient(true);
@@ -64,9 +63,8 @@ export const ProptechSection = () => {
     }
   ];
   useEffect(() => {
-    let rifle_interval: any;
     let index = count || 1;
-    rifle_interval = setInterval(() => {
+    const rifle_interval = setInterval(() => {
       if (index === features?.length) {
         index = 1;
         setCount(1);

@@ -1,6 +1,5 @@
 import {Box, Center, HStack, Stack, Text, VStack} from '@chakra-ui/react';
 import Image from 'next/image';
-import {FaArrowRightLong} from 'react-icons/fa6';
 
 export const TemplatesSection = () => {
   const templates = [

@@ -255,8 +255,8 @@ export const DynamicPhoneComponent = () => {
               letterSpacing={`0.08px`}
               opacity={`.9`}
             >
-              You've received $700 in monthly rental income for your studio apartment at Millwak
-              Apartments.
+              You&apos;ve received $700 in monthly rental income for your studio apartment at
+              Millwak Apartments.
             </Text>
           </Stack>
         </Flex>
