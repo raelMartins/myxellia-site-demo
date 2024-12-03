@@ -21,7 +21,7 @@ export const IdeasAndInsights = () => {
       >
         Our ideas and insights
       </Text>
-      <Grid templateColumns={{base: `1fr`, lg: `1fr 1fr`}} gap={{base: `32px`, lg: `25px 10px `}}>
+      <Grid templateColumns={{base: `1fr`, md: `1fr 1fr`}} gap={{base: `32px`, md: `25px 10px `}}>
         <Stack
           borderRadius={{base: `7.5px`}}
           borderTop={{base: `0.7px solid`}}
@@ -39,15 +39,15 @@ export const IdeasAndInsights = () => {
           </Center>
           <VStack align={`stretch`} p={`18px 20px`} gap={`8px`}>
             <Text
-              fontSize={{base: `20px`, lg: `13px`}}
-              fontWeight={{base: `500`, lg: `600`}}
-              lineHeight={{base: `120%`, lg: `140%`}}
+              fontSize={{base: `20px`, md: `13px`}}
+              fontWeight={{base: `500`, md: `600`}}
+              lineHeight={{base: `120%`, md: `140%`}}
               letterSpacing={{base: `0.186px`}}
             >
               The Genesis
             </Text>
             <Text
-              fontSize={{base: `12px`, lg: `11px`}}
+              fontSize={{base: `12px`, md: `11px`}}
               fontWeight={{base: `500`}}
               lineHeight={{base: `125%`}}
               letterSpacing={{base: `0.447px`}}
@@ -74,15 +74,15 @@ export const IdeasAndInsights = () => {
           </Center>
           <VStack align={`stretch`} p={`18px 20px`} gap={`8px`}>
             <Text
-              fontSize={{base: `20px`, lg: `13px`}}
-              fontWeight={{base: `500`, lg: `600`}}
-              lineHeight={{base: `120%`, lg: `140%`}}
+              fontSize={{base: `20px`, md: `13px`}}
+              fontWeight={{base: `500`, md: `600`}}
+              lineHeight={{base: `120%`, md: `140%`}}
               letterSpacing={{base: `0.186px`}}
             >
               Why Myxellia instead of building
             </Text>
             <Text
-              fontSize={{base: `12px`, lg: `11px`}}
+              fontSize={{base: `12px`, md: `11px`}}
               fontWeight={{base: `500`}}
               lineHeight={{base: `125%`}}
               letterSpacing={{base: `0.447px`}}
@@ -109,15 +109,15 @@ export const IdeasAndInsights = () => {
           </Center>
           <VStack align={`stretch`} p={`18px 20px`} gap={`8px`}>
             <Text
-              fontSize={{base: `20px`, lg: `13px`}}
-              fontWeight={{base: `500`, lg: `600`}}
-              lineHeight={{base: `120%`, lg: `140%`}}
+              fontSize={{base: `20px`, md: `13px`}}
+              fontWeight={{base: `500`, md: `600`}}
+              lineHeight={{base: `120%`, md: `140%`}}
               letterSpacing={{base: `0.186px`}}
             >
               We have automated payment plans. Now, we’re engineering
             </Text>
             <Text
-              fontSize={{base: `12px`, lg: `11px`}}
+              fontSize={{base: `12px`, md: `11px`}}
               fontWeight={{base: `500`}}
               lineHeight={{base: `125%`}}
               letterSpacing={{base: `0.447px`}}
@@ -144,15 +144,15 @@ export const IdeasAndInsights = () => {
           </Center>
           <VStack align={`stretch`} p={`18px 20px`} gap={`8px`}>
             <Text
-              fontSize={{base: `20px`, lg: `13px`}}
-              fontWeight={{base: `500`, lg: `600`}}
-              lineHeight={{base: `120%`, lg: `140%`}}
+              fontSize={{base: `20px`, md: `13px`}}
+              fontWeight={{base: `500`, md: `600`}}
+              lineHeight={{base: `120%`, md: `140%`}}
               letterSpacing={{base: `0.186px`}}
             >
               Why do startups struggle with fractional ownership?
             </Text>
             <Text
-              fontSize={{base: `12px`, lg: `11px`}}
+              fontSize={{base: `12px`, md: `11px`}}
               fontWeight={{base: `500`}}
               lineHeight={{base: `125%`}}
               letterSpacing={{base: `0.447px`}}

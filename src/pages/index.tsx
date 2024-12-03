@@ -1,3 +1,4 @@
+import {Navbar} from '@/components/Navbar';
 import {FeaturesSection} from '@/page-components/landing/FeaturesSection';
 import {FrequentlyAskedQuestions} from '@/page-components/landing/FrequentlyAskedQuestions';
 import {HeroSection} from '@/page-components/landing/HeroSection';
@@ -11,10 +12,15 @@ import {StartTrial} from '@/page-components/landing/StartTrial';
 import {TemplatesSection} from '@/page-components/landing/TemplatesSection';
 import {WebsiteCreation} from '@/page-components/landing/WebsiteCreation';
 import {Box} from '@chakra-ui/react';
+import Head from 'next/head';
 
 export default function Home() {
   return (
     <Box fontFamily={{base: `"Neue Haas Grotesk Display Pro"`}} maxW={`1440px`} mx={`auto`}>
+      <Head>
+        <title>Myxellia | Homepage</title>
+      </Head>
+      <Navbar />
       <HeroSection />
       <FeaturesSection />
       <ProptechSection />

@@ -93,11 +93,11 @@ export const ProptechSection = () => {
       >
         <Box w={{base: `100%`, lg: `550px`}}>
           <Text
-            fontSize={{base: `56px`}}
+            fontSize={{base: `40px`, lg: `56px`}}
             fontWeight={{base: `500`}}
-            lineHeight={{base: `100%`}}
-            letterSpacing={{base: `-2.24px`}}
-            maxW={{base: `438px`}}
+            lineHeight={{base: `120%`, lg: `100%`}}
+            letterSpacing={{base: `.8px`, lg: `-2.24px`}}
+            w={{base: `100%`, lg: `438px`}}
           >
             Become a PropTech in Minutes
           </Text>

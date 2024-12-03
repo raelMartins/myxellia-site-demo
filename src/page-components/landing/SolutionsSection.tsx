@@ -100,9 +100,9 @@ export const SolutionsSection = () => {
       </Stack>
       <Stack gap={{base: `30px`, lg: `105px`}}>
         {solutions_arr?.map((el, i) => (
-          <Flex key={i} align={{lg: 'center'}} direction={{base: `column`, lg: `row`}} w={`100%`}>
+          <Flex key={i} align={{md: 'center'}} direction={{base: `column`, md: `row`}} w={`100%`}>
             <Box
-              order={{lg: i % 2 == 1 ? `2` : `1`}}
+              order={{md: i % 2 == 1 ? `2` : `1`}}
               aspectRatio={{base: `660 / 371`}}
               w={`100%`}
               flex={`1`}
@@ -142,9 +142,9 @@ export const SolutionsSection = () => {
             </Box>
             <Stack
               gap={`12px`}
-              p={{base: `18px 0px`, lg: `40px`}}
+              p={{base: `18px 0px`, md: `40px`}}
               flex={`1`}
-              order={{lg: i % 2 == 1 ? `1` : `2`}}
+              order={{md: i % 2 == 1 ? `1` : `2`}}
             >
               <Text
                 fontSize={`22px`}
