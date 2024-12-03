@@ -16,7 +16,7 @@ import Head from 'next/head';
 
 export default function Home() {
   return (
-    <Box fontFamily={{base: `"Neue Haas Grotesk Display Pro"`}} maxW={`1440px`} mx={`auto`}>
+    <Box fontFamily={{base: `"Neue Haas Grotesk Display Pro"`}} maxW={`1600px`} mx={`auto`}>
       <Head>
         <title>Myxellia | Homepage</title>
       </Head>
