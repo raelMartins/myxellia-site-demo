@@ -11,7 +11,7 @@ export const HeroSection = () => {
       pt={{base: ` 38px`, lg: `93px`}}
       bg={{base: `#F0F0F0`}}
       direction={{base: `column`, lg: `row`}}
-      gap={{base: `100px`}}
+      gap={{base: `32px`, lg: `100px`}}
     >
       <Stack gap={{base: `24px`, lg: `20px`}}>
         <Text
@@ -47,7 +47,12 @@ export const HeroSection = () => {
           No credit card required.
         </Text>
       </Stack>
-      <Flex w={{lg: `840px`}} position={`relative`} align={`flex-end`}>
+      <Flex
+        w={{lg: `840px`}}
+        position={`relative`}
+        align={`flex-end`}
+        justify={{base: `center`, lg: `flex-start`}}
+      >
         <DynamicPhoneComponent />
         <Center
           position={`relative`}

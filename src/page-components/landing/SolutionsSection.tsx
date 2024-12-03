@@ -94,7 +94,7 @@ export const SolutionsSection = () => {
         >
           Build more than just a website
         </Text>
-        <Button2 variation="primary" background={{base: `#191919`, lg: `#181F66`}}>
+        <Button2 variation="primary" animationColor={`#181F66`}>
           Explore our solutions
         </Button2>
       </Stack>

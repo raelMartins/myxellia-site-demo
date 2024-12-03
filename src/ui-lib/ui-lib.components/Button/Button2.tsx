@@ -4,9 +4,17 @@ import {FaArrowRightLong} from 'react-icons/fa6';
 interface CustomButtonProps extends ButtonProps {
   variation?: 'primary' | 'secondary';
   showArrow?: boolean;
+  invertAnimation?: boolean;
+  animationColor?: string;
 }
 
-export const Button2: React.FC<CustomButtonProps> = ({variation, showArrow = true, ...rest}) => {
+export const Button2: React.FC<CustomButtonProps> = ({
+  variation,
+  showArrow = true,
+  invertAnimation = false,
+  animationColor = `#191919`,
+  ...rest
+}) => {
   const default_button_styles = {
     fontFamily: `Neue Haas Grotesk Display Pro`,
     fontSize: {base: `20px`, lg: `24px`},
@@ -26,12 +34,43 @@ export const Button2: React.FC<CustomButtonProps> = ({variation, showArrow = tru
       return (
         <ChakraButton
           {...default_button_styles}
-          background="#191919"
-          color="#ffffff"
+          background="transparent"
+          color={invertAnimation ? animationColor : '#ffffff'}
           p={{base: `20px 24px`, lg: `24px 32px`}}
+          position={`relative`}
+          overflow={`hidden`}
+          border={`1px solid`}
+          borderColor={animationColor}
+          _hover={{
+            color: invertAnimation ? `#ffffff` : animationColor,
+            _before: {
+              transform: invertAnimation
+                ? `translate(0%, 0%) skew(0deg)`
+                : `translate(-100%, 0%) skew(0deg)`
+            }
+          }}
+          _before={{
+            content: '""',
+            position: `absolute`,
+            top: `0`,
+            left: `0`,
+            width: `100%`,
+            height: `100%`,
+            backgroundColor: animationColor,
+            transform: invertAnimation
+              ? `translate(-100%, 0%) skew(0deg)`
+              : `translate(0%, 0%) skew(0deg)`,
+            transition: `0.5s`
+          }}
           {...rest}
         >
-          <HStack gap={{base: `24px`}} justify={`space-between`} w={`100%`}>
+          <HStack
+            gap={{base: `24px`}}
+            justify={`space-between`}
+            w={`100%`}
+            position={`relative`}
+            zIndex={`1`}
+          >
             <Text>{rest.children}</Text>
             {showArrow && <FaArrowRightLong />}
           </HStack>
