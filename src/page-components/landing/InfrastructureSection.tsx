@@ -8,6 +8,7 @@ export const InfrastructureSection = () => {
       p={{base: `100px 24px `, lg: `193px 64px`}}
       background={`#2F3FAD`}
       color={`#FFFFFF`}
+      data-background="#2F3FAD"
     >
       <Text
         fontSize={{base: `40px`, lg: `64px`}}

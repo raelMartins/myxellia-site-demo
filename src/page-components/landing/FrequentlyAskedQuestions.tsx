@@ -18,6 +18,8 @@ export const FrequentlyAskedQuestions = () => {
       background={`#000000`}
       color={`#FFFFFF`}
       align={`flex-start`}
+      id={`faq`}
+      data-background="#000000"
     >
       <Text
         maxW={`536px`}

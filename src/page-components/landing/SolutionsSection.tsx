@@ -14,17 +14,38 @@ type Solution = {
 };
 export const SolutionsSection = () => {
   const [isClient, setIsClient] = useState(false);
+  const [playing, setPlaying] = useState(false);
 
   useEffect(() => {
     setIsClient(true);
+  }, []);
+
+  useEffect(() => {
+    const section = document.getElementById('solutions') as Element;
+
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setPlaying(true);
+          } else {
+            setPlaying(false);
+          }
+        });
+      },
+      {rootMargin: `50%`}
+      // {rootMargin: `100%`, threshold: 0.1}
+    );
+    observer.observe(section);
+    return () => observer.disconnect();
   }, []);
   const solutions_arr: Solution[] = [
     {
       title: `Optimize your payment collection`,
       description: `With automated transaction logging, every payment your clients make is instantly recorded—no manual entry needed. No matter where they are in the world or what time they pay, their transactions are captured seamlessly.`,
-      media_type: `image`,
-      media_url: `https://s3-alpha-sig.figma.com/img/f61c/c21e/252a845688a7609fbc705eb3ad652ae2?Expires=1733702400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=dQ-ICoH-KaNvTrjOB7P3CrWhF9JzCUeMhIDAqOtBEXkGZBCcRfxBY7igTKUtdxSyHkIJPN~Vk63XosznwOk9a-k-mE8MS4AkvQCvnH2yrJXy2O03vWryl2tiGeM8aiB4VT0wWz0GIrKTEpDl1QCJGTLsqsf2IinNEWBiVLDl-aCfJRo5nIztjOqmMuX23KrNPEdIQbQx9yZ7uTSg5hjsB0M1BoYG6H8N162XA73AhoXBld-xxTnLgoRs43KMskYbeKhhycYb6Bov9RxpzpqVPnYzkKzZbepz32mWwjKkDp0lqS0duPBZEaQxmaIpQ3YMm38vUAj3A0n0bSLCNBdrEQ__`,
-      media_dimensions: {height: 787, width: 400},
+      media_type: `video`,
+      media_url: `https://veerge-media.s3.us-east-1.amazonaws.com/Payment%20collection.mov?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAVK34NDYCDSQKBNTS%2F20241209%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241209T093751Z&X-Amz-Expires=300&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELr%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQC%2F%2Bm6xTKbRojHGt05YYuBSQ3TgJcSD69qUNW0Cr4%2FAdAIhAPWB3i8%2FUeWV5CWd87MZQA05XVhmbJz5VUVeb6P6eUPkKoEDCHMQARoMMzY2OTQzNzM5Mzk2Igzsaq7d5VPfZFBaQpUq3gIoD7xKZ%2FP9tGIQXaQdGflLb2UIhIXJGkabtLIVmLJi51%2BsZjNMx9xe%2BxhnunNG%2F4ab6L38vj%2FBpST1rwPYx2OfdkLvVhtJkxOjRRb1OMIiUkK%2BtzFTXtZpIjgwg6l%2F0UFW7IUPAxbZs2hq1y2WnH%2B3SQsbui4RmP13gk3GeS34MQ5DyQV2jwQ8jloKm4Etay1Z6dQ866S0qBUIfH1lZY%2BBPyqHCfNGwGOIUv9cBaLRMYh%2FrEH4qpZVc8Q5yyWXnhyPGXnaXKRfgoj%2FTF3ipELB1CTqOt45eXcQq4cCc0re1yCpm90utGlfDITDQVzmg49lDvk5Vfoz9LQWe432FWPxlv2SQyqpsywtCyTb5c6PBHvxrLpYGtXr%2FDYdRhLxk%2FkIgObDcM6bIJyzcZwrtVmdULARFFigKojkJIfxKljtxxZzrbu8ZtrU7TYMVPZXlTIYytp2BrwIluzH6ZS9njCb2Nq6BjqyAkZR9zb%2Fr8kMm3M%2FWpu0DxJrdBnSCi9ZyvF%2FQ1chJ3KXfLdCckeOpgwtrr2rb931QrYz8deV41C6UQmC3TouKbxX4aH%2FQcKjqkwTyf4V8fPXNOmR80Nq8g4tg40ZETdt88L9nX2pa0HYxZ9TMuiLDjcsEt3qLpofKP1BIEqleGWQVisCDAxCwG99erOpxo4%2FV1QV0H3izzaCcPFYX%2B8uN6unXrNHurl5lOv0QrhQ5P4GCYDyyBZnO4pKv6XrESFkUfOctSm3t4yR3t1y3F%2FRTR8CmZ%2FpUZfa32eDqSbcPgcllayJ72gJDxPMiA9XukfOdCUZpyw3HBMCjtJiA3C25TcfGQAShoHFs5z4ZTnwHI65vzL%2FQL2xwI3Gu3Im6%2B0UEguDpMkBC5Y6ATOfJ%2B%2BFaD%2FL%2Bg%3D%3D&X-Amz-Signature=d818035f457787ab9c073ad7d7d54b25d1d696364038b267a82025a9af0e6c07&X-Amz-SignedHeaders=host&response-content-disposition=attachment`,
+      media_dimensions: {height: 371, width: 660},
       background: `radial-gradient(50% 50% at 50% 50%, #470804 0%, #220402 100%)`
     },
     {
@@ -76,6 +97,8 @@ export const SolutionsSection = () => {
       gap={{base: `50px`, lg: `100px`}}
       p={{base: `80px 24px`, lg: `86px 64px`}}
       background={`#F1F2FE`}
+      id={`solutions`}
+      data-background="#F1F2FE"
     >
       <Stack color={`#181F66`} gap={`24px`} maxW={{base: `882px`}}>
         <Text
@@ -131,7 +154,7 @@ export const SolutionsSection = () => {
                       }}
                       width={'100%'}
                       height={'100%'}
-                      playing={el?.media_url ? true : false}
+                      playing={el?.media_url && playing ? true : false}
                       loop
                     />
                   )}

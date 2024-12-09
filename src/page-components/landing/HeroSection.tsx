@@ -2,6 +2,7 @@ import {Button2} from '@/ui-lib';
 import {Box, Center, Flex, Stack, Text} from '@chakra-ui/react';
 import Image from 'next/image';
 import {DynamicPhoneComponent} from './DynamicPhoneComponent';
+import {neueHaas} from '@/fonts';
 
 export const HeroSection = () => {
   return (
@@ -12,6 +13,7 @@ export const HeroSection = () => {
       bg={{base: `#F0F0F0`}}
       direction={{base: `column`, lg: `row`}}
       gap={{base: `32px`, lg: `100px`}}
+      // data-background='#F0F0F0'
     >
       <Stack gap={{base: `24px`, lg: `20px`}}>
         <Text
@@ -21,8 +23,9 @@ export const HeroSection = () => {
           lineHeight={{base: `115%`}}
           letterSpacing={{base: `1.44px`}}
           textTransform={{base: `uppercase`}}
+          className={neueHaas.className}
         >
-          <Box as={`span`} fontWeight={`700`}>
+          <Box as={`span`} fontWeight={`700`} className={neueHaas.className}>
             CREATE AN APPLICATION
           </Box>{' '}
           FOR YOUR REAL ESTATE COMPANY
@@ -62,9 +65,7 @@ export const HeroSection = () => {
           display={{base: `none`, xl: `flex`}}
         >
           <Image
-            // src={`https://s3-alpha-sig.figma.com/img/f421/933f/23a5ac32891eb4a0a4fdc3a5f6349b04?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=C3bY1kf7BveEHPAPia24V6UUPw0Q5N81eCH1yryhWUrTdJSYcDEltOEE155PW15qSsoAPdoo2RPhmURlmWLuRuphsLCrm-zJ2UB7bBteYWpewEdj51bIDy37CHs6LWGcqE6u8R-ThFMKpHbBgxkgv4tQUgmr6aGaB6bTfQ53pRnJ1y2P42CnUzBZMf8foX73Tx6Ap35El2qN3y19BXo-06-hyxxkyPBzW13EJ0xDFlvhdv3R8AkXqCVJfyaCcTLAN6PTVXtNA6Zq0wQUxBM1a5MMwRgFvXyKa7HIAcmI6e7aynw6uY9Xj8stwk~-wPwxZf83CmfhEtHXUNJEKd8SPQ__`}
-            // src={`/temp_local_images/hero_image.jpg`}
-            src={`/temp_local_images/hero_image_cropped.png`}
+            src={`https://veerge-media.s3.us-east-1.amazonaws.com/myxellia_assets/hero_image_cropped.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAVK34NDYCNQWUD7U4%2F20241209%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241209T084535Z&X-Amz-Expires=300&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQC1CWMnPiAwFhj7Wfq8s2H3s2FmUoHdP3X7sFYlDXb1FwIhAMOEExD%2F%2FfcE1874KQgxTpKNkhR2JQb2kOuL1pJkBAPoKoEDCHIQARoMMzY2OTQzNzM5Mzk2IgwFLm68X6zYBNIrkssq3gI%2Bs0EwE5%2F0SHoHb%2Fhu8JETSdWm%2BRzSmQBGLKW94Z%2BP8glFS%2FLflfWzyt%2FKFJhVWsr1jMb4h5R7jD5HSXOdICwVqLDun5KS2wTLuaUa7F0k0BQYOxjGYA1BI5pz356cRASA8THHyQEM7TvojY0oqHM%2FmauDP2vpExwUpSVq5xE13bxIfWWPrc2p2i5AGJMyvsH32b9o0yfA4DSXlh87jnFDJjqMjtAr4jZaDQF1vivw3b%2BxA0HsUtZtKFvhRNKngEIRWXrS%2F5tVho%2BGIW%2Ftqyzdqx2OkImOkteSvMs%2BHcli8s1D4gfxCvhDC2GUJflYkH3knCb1TIQujS3Gak%2BXGN%2FY3CLilfdF1mx8aLU1%2BUuEKZMrW0EYpviIxmUPnS02laT8zO4lncviBUhefhNdnZz3R600HFFj9KF1NZm4mKBjA4ynZ4mEjWGXoHOiHIlIHUVL7lltR1CK%2F%2B02TjARlDCb2Nq6BjqyAqVlXBnZnD4laqzRkMF54knLstOmGJsPO0c4Pfr5qn%2FJfFxzaSNy8BAEjlrZ50v3313SX2AIYCHGUuiKhWqJfGUZNA4bIx4jaxhVi2mk9TZeFrpO1qg7ga1qY1p8Ov494yF44Dr4%2BabLbZ1cWE4YZ5dDmYomZQ9quZcyesKPFYYWDZpF%2BGi1gVvA9aBMH33sfqDMwiKVCniF4jQLeWBydMtmOlBJs2HZK1bXe2SaWtKp2%2BkOwojRWrUbjCzP%2F7Wci%2FUuLcbNEW1XWoz8scqA6jpA1w5N3zQ7ad7kdtuyAX0arP5bNgCtGGPZyj4%2F0dgNHwSG34wP8ZqOGb965Pr8C9uQh5nNn0YGTQNN9U5w1cwQXClf3QXMN3WFA3qgfWdOIgCwrmv6W0MJG72KUX9AV2Np%2FA%3D%3D&X-Amz-Signature=92395248f7952764a60420b08e1d82f5562f702646e3d4760c090584d2ad398f&X-Amz-SignedHeaders=host&response-content-disposition=inline`}
             alt={`hero image`}
             fill
             style={{objectFit: `cover`}}

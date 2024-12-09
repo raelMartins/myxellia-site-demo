@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export const PropertyDevelopers = () => {
   return (
-    <Stack p={{base: `100px 24px `, lg: `120px 64px`}} gap={`35px`}>
+    <Stack p={{base: `100px 24px `, lg: `120px 64px`}} gap={`35px`} data-background="#FFFFFF">
       <Text
         maxW={`851px`}
         fontSize={{base: `32px`, lg: `56px`}}
@@ -42,7 +42,7 @@ export const PropertyDevelopers = () => {
               transition={`.5s`}
             >
               <Image
-                src={`https://s3-alpha-sig.figma.com/img/1f8a/0f04/96c2ecbb45355575d046376b57dbc2dc?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fwfjTuNAIUfqcv8q-0aXNMJ6ZXsH5YKWtM0FOq78L1WPbbFUnq~A5ok1wxxu-HTKy15qrUXvasLujflCAlNXXsra2eSOImPzl27vO3BbAdq~7Bgt3WgI6WlveqNhdFeEFr3wzUhOyAd9TVnzbENrvxDWfaklUBEQUUj7CFb0KweNbfY46dPUQFBsamvrgXJySz0GjHzwjd~z-J-Fj2oHBqAKYWF7ktDT5DsjTwESiyn-LW6lXEMf-8kGteUAcICNll1EtNazqdrU0ucOppVfbYf~Sa3xyCF0Xk6Owq8cMKEHaeP7Nb3IVK3BHCREG~VKyr3HyOLCPzI557VlBK~VZQ__`}
+                src={`https://s3-alpha-sig.figma.com/img/4e3b/1b87/c885cb3b6363302e81d0f82f87abea60?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=XGAqsyIHeUsa6c3re9gpgELt72aPgCzLcUhikhQcsePqmmBnrdZWYNxITrGZ6ihrrps6LPLIAWq9Ib3V8QJXYpmF5yhufhnKZxC9tezEUcQkhwR1Cg0XkeDXOWg9fILu1DlwoZQmBulRJxP5PgBu3fIeMTDTqby6ApUhECeM~PJN9Jn7ykFY5Z9QPRV9-Ptb39Ea5vRgvJ6mI472lArn8ml9-h~fexSEOWcoZmFVM4-QUScY04aZH2ac7CcXTASamXa265-s0EfUxqluyVIl0wAqxHR0ecZVI2i6Mr3zwUJu1RyH3kzYjsyGRixp-ILpVDwVm-VaQ-xsDlkzmpwIHQ__`}
                 alt="Veritasi"
                 fill
                 style={{objectFit: `cover`}}
@@ -98,7 +98,7 @@ export const PropertyDevelopers = () => {
               transition={`.5s`}
             >
               <Image
-                src={`https://s3-alpha-sig.figma.com/img/4bca/4b43/9d4a1b5431c497cfc3cba274cf53f0ed?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OUC7dcXeO-5ejW0gcc1vPDWdpF6qYytPzhqzULyRZaK3XLmRYyXtvXgoOBf337QijhMuK6gmNTf1s6QeLeQSMN1UcTgYXfaNvEADbyjEQAai2qBSDJ4fvWHPKjT5W-Zt3iadskcu0O2Ajid5IowhEa8dS~4DGhzmSi7Lv4UbCQWbX0ZkuBpu6swl8B4QeSxOCrlVP9M078B3imKCmu73tN1F~AGHt1hdGPVNZXDc0fEZUVYs9mVvg6cTydTjvMPcMnvMe1ysuB3cdANRHonI9ArwFI3KHIS35BOP68cy0zhs0JK~8z9A~JmJ-xYL5S4iV-pwJp1SJPfqhunjFnxs0Q__`}
+                src={`https://s3-alpha-sig.figma.com/img/df9e/6a18/6f4677a9872afca090c6d18e07488167?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OI~xmQ4kjLZFIqJD6E1J4kQaQGuC2FHJxtTn0IhSI7zbtAHOtV8FpsLTT38tPYyQeU8-65bCypa~vAWs6wwfOqBwndpzCUkYGhNLV2Vw6nvps57lqE2vNppfvcAfwuW3G1G9FheqnFqLU3ZUOsUX-eYYWWvJCKgyQpYvUXTwQShzSy~q5JW9ZSDv2f39c5OAzj7Ri8LOZTF6PP8Z9HthpK1DrKKhL3-4rQtdPPQi9GoHRJjGoaAJ71P25ViHVh4yk-Y8IlDm~GXGF7qNpP9M7e12V503MX9YM6IkbrCJbEvXD8Pw8tCtznHX4LVIY5WTBmzidZeSm1JIqq-eVPO~jw__`}
                 alt="Gidi"
                 fill
                 style={{objectFit: `cover`}}
@@ -153,7 +153,7 @@ export const PropertyDevelopers = () => {
               transition={`.5s`}
             >
               <Image
-                src={`https://s3-alpha-sig.figma.com/img/aa10/44a6/e34b3137aca9a8b2ab8b275b75373984?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EiodcbrDxVLInpu84LzgKVoJSssgyWm5m-5XGe6BNlrOROkbf8YxDIVAIF8uEpGyNg3Ut5q3KJpK80bHyOQGWi17F4ZbOT0J7~dqkkeVvprK~adYYyWwlBy-SYAwAQt0MaZSYeoMNtEUCC6Nx2nCfP0ywKdwVYw6ohCHVTlpZJPhrahB5~tW~3OhDEcacIzky4yMNkJU6X-QbxW0mXY5CeR88wNvw2qQxfyRRojeZ8~mfGHjOsAJi9lFnU80uxu1l3JCG1Km10l3QXmxWEkMzM4goMCEOpSXmnn1Y7K2VHJn6e8t-ZuozcW7HvIcJn45XB9gUghNtz8iTlpJB-oDXQ__`}
+                src={`https://s3-alpha-sig.figma.com/img/aa10/44a6/e34b3137aca9a8b2ab8b275b75373984?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EzxZEFNSzBuy2DcgcidJsIGuv3EOkgfYL~W-F0MirGZie4XWN2mQozTh~SI9uJc6HFAe7oKbobUQg4h~dbs85xxbWSvHc~ZPbT-lOWvx74PLFP6eRCSJPFTnUplJ9cyk0mAN-Hc4rlz-sceDUKc-ze9GXEY99~54RGVw~GVS~uOLojDYw3Q5yw7i7~h889BbiQ4FM-48jJ~WfSl8qCXOfusCZ1f5AzQSVBn4~HwOL~VjyTCVU4C~wiNSS~BO~xvss42LKX7pWPhFfNVxGtuIUideJfVEFJnKIALcMk1k0N3IZ3PvwcRa4zob-ChxarYzoCTnvbWUPtcPdchd1Ng43w__`}
                 alt="Adozillion"
                 fill
                 style={{objectFit: `cover`}}

@@ -1,3 +1,4 @@
+import {sf_pro} from '@/fonts';
 import {Box, Center, Flex, HStack, Stack, Text} from '@chakra-ui/react';
 import moment from 'moment';
 import Image from 'next/image';
@@ -59,14 +60,14 @@ export const DynamicPhoneComponent = () => {
   useEffect(() => {
     let index = 0;
     setInterval(() => {
-      if (index === 5) {
-        index = 0;
-        setCount(0);
-      } else {
-        index++;
-        setCount(index);
-      }
-    }, 1300);
+      // if (index === 5) {
+      //   index = 0;
+      //   setCount(0);
+      // } else {
+      index++;
+      setCount(index);
+      // }
+    }, 2000);
   }, []);
 
   return (
@@ -81,8 +82,7 @@ export const DynamicPhoneComponent = () => {
       <Stack
         color={{base: `rgba(255, 255, 255, 0.8)`}}
         textAlign={{base: `center`}}
-        className="time_font"
-        fontFamily={{base: 'SF Pro Display'}}
+        className={sf_pro.className}
         position={`absolute`}
         top={`80px`}
         left={`30px`}
@@ -98,7 +98,7 @@ export const DynamicPhoneComponent = () => {
         </Text>
       </Stack>
       <Image
-        src={`/temp_local_images/phone_locksreen.png`}
+        src={`https://veerge-media.s3.us-east-1.amazonaws.com/myxellia_assets/phone_locksreen.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAVK34NDYCNI2L2G7V%2F20241209%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20241209T085329Z&X-Amz-Expires=300&X-Amz-Security-Token=IQoJb3JpZ2luX2VjELn%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJGMEQCIBEP1LXoxw8S1309ldD%2FuS0LFAZIgfwzMEGSDJMFdWq%2BAiAp7rdiP3UJsaK%2F325MZQDaMKlSGgTz14yxJ2RkxGdJgCqBAwhyEAEaDDM2Njk0MzczOTM5NiIM%2FahLFkeDhNu8BXmhKt4ChhWdHMtaHg26iql7Gitdua8GIjSC02b1bqRRVPS1W5REJehQi%2FvTF225yZVKqLmd%2FTAvd18pGq8qqFLSe1ASsgy7V%2F%2BFu2C4YkgQBM6ad%2Bq%2FcJ1uULjcHDv%2F0DC2ZiVC2XrQM%2B96vjotonjzFB%2BtNgjrS07QFPrrQ7Lh97tp4UaaabSST6i2wF9vQuSgbVeLo2M5m%2FMknuMbp9fWWToW75heKa7zFqe4o72B9pTPQFe4FwAedPcIJkOVmVBZbiHMO8%2ByUyXVeBHHXSNji6BYEvzTPafBOPTiBSEFUEKoRHnvTwLehgSZnIJr6PwDH9uSudFVP%2B6VWCrGsLb3M9LnH%2FQpjndw0dCiQcrQSQOpdzDQY8d2jDzx2T6ZwspbeGaq752U1ZHzdGMLYTGB5xfZdN5xTS8MFLUN25PrBibUFldsvm9aCo9StPVVaRsJ9zOiwBGrRQHZjkDwAN8dl%2F0wm9jaugY6tALYdbaO%2FcHBq6vkFTkqiQ7NrZ5IkmjLtZbJcPq673GbbsU%2BiqJFiYmhiFHbimTsN4I4s%2FM9pSRh7dQWI0sAEz%2FuQsaDw%2FQfsMuKDK94EvK%2F4NjfojZ6%2Bf90o5vxXCA8Gl5C3utLYbmiPrMjKdz1mLbAAmpmM1f7Yix56bWDH5RZOVwgW%2FhaXyzXIUl%2Bfyh9J1rvt%2F2hbvRnEJodhZZb77Mr%2FkVwcKki1cDVrkOvlWFVPDarMg07nPPb3JVR33mFsoczQ9V6y7y36w2LkqDNVmenFE8FeIWvR1cipWUHKbksBMEfY5qSwvrF1Iw3CMO9W8yv2CQHc7fbZb1%2B1nAv6ChAIklU%2BIQGJV4WQ5BN0mt1K4NFFA%2Bq9UwnS3W6ngWXiB40MA7RKPZ%2B9yuAoxcv67hYp9nsgw%3D%3D&X-Amz-Signature=cc0efa6e62e6fda6171ce59c814a3dc5f188dcd49354776f64ed97982b419160&X-Amz-SignedHeaders=host&response-content-disposition=inline`}
         alt="dynamic Image"
         fill
         style={{objectFit: `contain`}}

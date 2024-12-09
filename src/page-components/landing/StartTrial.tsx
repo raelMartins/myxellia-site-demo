@@ -8,6 +8,7 @@ export const StartTrial = () => {
       p={{base: `60px 24px `, lg: `120px 64px 44px`}}
       background={`#000000`}
       color={`#FFFFFF`}
+      data-background="#000000"
     >
       <Text
         fontSize={{base: `36px`, lg: `100px`}}

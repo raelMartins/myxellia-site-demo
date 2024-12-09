@@ -1,3 +1,4 @@
+import {neueHaas} from '@/fonts';
 import {ButtonProps, Button as ChakraButton, HStack, Text} from '@chakra-ui/react';
 import {FaArrowRightLong} from 'react-icons/fa6';
 
@@ -16,7 +17,6 @@ export const Button2: React.FC<CustomButtonProps> = ({
   ...rest
 }) => {
   const default_button_styles = {
-    fontFamily: `Neue Haas Grotesk Display Pro`,
     fontSize: {base: `20px`, lg: `24px`},
     fontWeight: `500`,
     lineHeight: {base: `100%`, lg: `166.667%`},
@@ -26,7 +26,8 @@ export const Button2: React.FC<CustomButtonProps> = ({
     borderRadius: {base: `39px`, lg: `72px`},
     _hover: {opacity: rest.isDisabled ? 'auto' : '1'},
     _active: {opacity: rest.isDisabled ? 'auto' : '1'},
-    _focus: {opacity: rest.isDisabled ? 'auto' : '1'}
+    _focus: {opacity: rest.isDisabled ? 'auto' : '1'},
+    className: neueHaas.className
   };
 
   switch (variation) {

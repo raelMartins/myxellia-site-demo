@@ -3,7 +3,7 @@ import {Box, HStack, ListItem, OrderedList, Stack, Text} from '@chakra-ui/react'
 
 export const WebsiteCreation = () => {
   return (
-    <Box p={{base: `120px 24px `, lg: `100px 64px`}}>
+    <Box p={{base: `120px 24px `, lg: `100px 64px`}} data-background="#ffffff">
       <Stack maxWidth={{base: `950.48px`}} mx={`auto`} gap={{base: `34px`, lg: `84px`}}>
         <Text
           color={{base: `#000`}}
